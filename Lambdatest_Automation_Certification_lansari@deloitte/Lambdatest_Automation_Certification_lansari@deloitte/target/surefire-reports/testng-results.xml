@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-12-18T16:07:14 WET" name="Suite" finished-at="2022-12-18T16:07:37 WET" duration-ms="22949">
+    <groups>
+    </groups>
+    <test started-at="2022-12-18T16:07:14 WET" name="Test" finished-at="2022-12-18T16:07:37 WET" duration-ms="22949">
+      <class name="com.lambdatest.TestScenario2">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:com.lambdatest.TestScenario2@3901d134]" started-at="2022-12-18T16:07:14 WET" name="setup" finished-at="2022-12-18T16:07:26 WET" duration-ms="12133" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lambdatest.TestScenario2.basicTest() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@31368b99]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="basicTest()[pri:0, instance:com.lambdatest.TestScenario2@3901d134]" started-at="2022-12-18T16:07:26 WET" name="basicTest" finished-at="2022-12-18T16:07:36 WET" duration-ms="10289" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basicTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.lambdatest.TestScenario2@3901d134]" started-at="2022-12-18T16:07:36 WET" name="tearDown" finished-at="2022-12-18T16:07:37 WET" duration-ms="490" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.lambdatest.TestScenario2 -->
+      <class name="com.lambdatest.TestScenario1">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method,org.testng.ITestContext)[pri:0, instance:com.lambdatest.TestScenario1@78dd667e]" started-at="2022-12-18T16:07:14 WET" name="setup" finished-at="2022-12-18T16:07:27 WET" duration-ms="13417" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.lambdatest.TestScenario1.basicTest() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@31368b99]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="basicTest()[pri:0, instance:com.lambdatest.TestScenario1@78dd667e]" started-at="2022-12-18T16:07:27 WET" name="basicTest" finished-at="2022-12-18T16:07:35 WET" duration-ms="8024" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basicTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.lambdatest.TestScenario1@78dd667e]" started-at="2022-12-18T16:07:35 WET" name="tearDown" finished-at="2022-12-18T16:07:36 WET" duration-ms="760" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.lambdatest.TestScenario1 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
