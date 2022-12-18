@@ -12,6 +12,8 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.ITestContext;
 import org.testng.annotations.AfterMethod;
@@ -59,22 +61,20 @@ public class TestScenario1 {
   public void basicTest() throws InterruptedException {
     System.out.println("Loading Url");
 
+    System.out.println("1. Navigate to https://www.lambdatest.com.\n");
     driver.manage().window().maximize();
-    System.out.println("1. Navigate to https://www.lambdatest.com.\n"
-        + "2. Perform an explicit wait till the time all the elements in the DOM are available.");
-    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-    Thread.sleep(500);
-
     driver.get("https://lambdatest.com");
-    System.out.println("3. scrolling down");
-    // Using more than 3 different Locators (className, linkText and xpath)
-    driver.findElements(
-        By.cssSelector("span"));
 
+    System.out.println("2. Perform an explicit wait till the time all the elements in the DOM are available.");
+    // Using more than 3 different Locators (cssSelector, linkText and xpath)
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+    wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.cssSelector("*")));
+
+    System.out.println("3. scrolling down");
     driver.executeScript("arguments[0].scrollIntoView(true);", driver.findElement(By.linkText("SEE ALL INTEGRATIONS")));
     JavascriptExecutor js = (JavascriptExecutor) driver;
-    js.executeScript("window.scrollBy(0,-200)");
-    Thread.sleep(500);
+    js.executeScript("window.scrollBy(0,-220)");
+    Thread.sleep(400);
 
     System.out.println("4. Click on the link and ensure that it opens in a new Tab.");
     // Open the link in a new tab
